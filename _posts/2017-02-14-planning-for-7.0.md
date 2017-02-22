@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "What's in 7.0"
+title:  "Planning for 7.0"
 author: Henry Zhu
 date:   2017-02-14 12:00:00
 categories: announcements
-share_text: "What's in 7.0"
+share_text: "Planning for 7.0"
 ---
 
 If you didn't know already, we're planning on releasing a 7.0 version soon! I'd like to go over some notable changes and a few things we are still working out!
