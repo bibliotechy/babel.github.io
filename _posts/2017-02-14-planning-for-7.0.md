@@ -15,7 +15,7 @@ If you didn't know already, we're planning on releasing a 7.0 version soon! I'd 
 
 ### [#4315](https://github.com/babel/babel/issues/4315) Drop support for unmaintained Node versions: 0.10, 0.12, 5
 
-Progress in OSS projects often comes at the cost of upgrading for its users. Because of this, we've always been hesitant in making the choice to introduce a major version bump/breaking changes. But by dropping Node v0.12, we can not only make a number of improvements to the codebase, but also upgrade dependencies and tools (ESLint, Yarn, Jest, Lerna, etc).
+Progress in OSS projects often comes at the cost of upgrading for its users. Because of this, we've always been hesitant in making the choice to introduce a major version bump/breaking changes. But by dropping unsupported versions of Node, we can not only make a number of improvements to the codebase, but also upgrade dependencies and tools (ESLint, Yarn, Jest, Lerna, etc).
 
 ## Meta
 
