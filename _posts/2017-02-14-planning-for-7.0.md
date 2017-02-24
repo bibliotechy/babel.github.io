@@ -147,7 +147,7 @@ Developers can easily implement environment config changes in JavaScript itself
 var env = process.env.BABEL_ENV || process.env.NODE_ENV;
 module.exports = {
   plugins: [
-    env === 'development' && "transform-react-constant-elements"
+    env === 'production' && "transform-react-constant-elements"
   ].filter(Boolean)
 };
 ```
@@ -156,7 +156,7 @@ Or how [create-react-app](https://github.com/facebookincubator/create-react-app/
 
 ```js
 var plugins = [];
-if (env === 'development') {
+if (env === 'production') {
   plugins.push.apply(plugins, ["transform-react-constant-elements"]);
 }
 module.exports = { plugins };
