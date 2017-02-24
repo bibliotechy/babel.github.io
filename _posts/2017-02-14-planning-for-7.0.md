@@ -11,33 +11,11 @@ If you didn't know already, we're planning on releasing a 7.0 version soon! I'd 
 
 > For more specific changes, please check out our upgrade guide (will be updated)!
 
-## 💥 Breaking Changes
+## 😎 Awesome Changes
 
 ### [#4315](https://github.com/babel/babel/issues/4315) Drop support for unmaintained Node versions: 0.10, 0.12, 5
 
 Progress in OSS projects often comes at the cost of upgrading for its users. Because of this, we've always been hesitant in making the choice to introduce a major version bump/breaking changes. But by dropping Node v0.12, we can not only make a number of improvements to the codebase, but also upgrade dependencies and tools (ESLint, Yarn, Jest, Lerna, etc).
-
-### [#5128](https://github.com/babel/babel/issues/5128) Babel presets must export a function as the default export
-
-To simplify things, we've decided to standardize on requiring presets be functions that return a Babel config object (rather than just an object).
-
-Before (invalid in 7.0)
-
-```js
-export default {
-  plugins: ['plugin-a']
-};
-```
-
-After
-
-```js
-export default function() { // or module.exports
-  return {
-    plugins: ['plugin-a']
-  };
-}
-```
 
 ## Meta
 
