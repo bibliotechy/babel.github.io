@@ -45,7 +45,7 @@ export default function() { // or module.exports
 
 Babel itself doesn't have that many external dependencies, but in 6.x [each package has a dependency on `babel-runtime`](https://github.com/babel/babel/blob/958f72ddc28e2f5d02adf44eadd2b1265dd0fa4d/packages/babel-plugin-transform-es2015-arrow-functions/package.json#L12) so that built-ins like Symbol, Map, Set, and others are available without needing a polyfill. By changing the minimum supported version of Node to v4 (where those built-ins are supported natively), we can drop the dependency entirely.
 
-> This is an issue on npm 2 (we didn't recommended it's use with Babel 6) and older yarn, but not npm 3 due to its deduping behavior.
+> This is an issue on npm 2 (we didn't recommended its use with Babel 6) and older yarn, but not npm 3 due to its deduping behavior.
 
 With [Create React App](https://github.com/facebookincubator/create-react-app) the size of the node_modules folder changed drastically when babel-runtime was hoisted.
 
@@ -109,7 +109,7 @@ var regex = /[0-9A-Fa-f]/;
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thoughts on <a href="https://twitter.com/babeljs">@babeljs</a> using npm scoped packages for 7.0?</p>&mdash; Henry Zhu (@left_pad) <a href="https://twitter.com/left_pad/status/821551189166878722">January 18, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Seems like most who understood what scoped packages were was in favor?
+Seems like most who understood what scoped packages are were in favor?
 
 Pros
 
@@ -162,7 +162,7 @@ if (env === 'development') {
 module.exports = { plugins };
 ```
 
-Either way, it seems both simple and straightfoward to write this kind of logic (and we could always provide some helper functions for this).
+Either way, it seems both simple and straightforward to write this kind of logic (and we could always provide some helper functions for this).
 
 ### `external-helpers`, `transform-runtime`, `babel-polyfill`
 
